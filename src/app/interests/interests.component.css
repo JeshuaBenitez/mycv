@@ -1,0 +1,39 @@
+.interests-card {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; /* Centra horizontalmente */
+  text-align: center;   /* Centra texto dentro */
+}
+
+.interests-card h2 {
+  color: #f0f6fc;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Centra chips */
+}
+
+.interest-chip {
+  background-color: #2d333b;
+  color: #c9d1d9;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  border: 1px solid #444c56;
+  transition: background-color 0.3s ease;
+}
+
+.interest-chip:hover {
+  background-color: #444c56;
+  color: #ffffff;
+}
+

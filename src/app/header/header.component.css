@@ -1,8 +1,74 @@
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.header-card {
+  background: linear-gradient(145deg, #1e1e2f, #2b2d42);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-align: center;
 }
 
-header .name {
-    grid-column: span 2;
+/* Imagen con sombra suave */
+.profile-image {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Título principal */
+.header-card h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Subtítulo / meta */
+.header-card .goal {
+  color: #b0bec5;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+/* Lista de contacto */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  max-width: 420px;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+
+.contact-list li {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+/* Botones */
+.header-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn,
+.icon-link {
+  background-color: #58a6ff;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:hover,
+.icon-link:hover {
+  background-color: #1e8fff;
+  color: #ffffff;
 }

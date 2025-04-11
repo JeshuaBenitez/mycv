@@ -1,8 +1,13 @@
-<ul *ngFor="let lang of languages"> 
-    <li>
-        <strong>Language: </strong> {{ lang.idiomas }} <br>
-    </li>
-    <li>
-        <strong>Level: </strong> {{ lang.nivel }} <br>
-    </li>
-</ul>
+<div class="languages-card">
+  <h2>Languages</h2>
+
+  <div *ngFor="let lang of languages" class="language-entry">
+    <p>
+      <strong>{{ lang.idiomas }}</strong>
+    </p>
+    <div class="level-bar">
+      <div class="level-fill" [ngStyle]="{ 'width': getLevelWidth(lang.nivel) }"></div>
+    </div>
+  </div>
+</div>
+

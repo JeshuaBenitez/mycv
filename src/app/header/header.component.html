@@ -1,19 +1,23 @@
-<h1>{{ header.name }}</h1>
-<p>{{ header.goalLife }}</p>
-<img src= header.photoUrl>
-<ul>
-  <li>
-    <strong>Email: </strong>{{ header.email}}
-  </li>
-  <li>
-    <strong>Phone Number: </strong>{{ header.phoneNumber}}
-  </li>
-  <li>
-    <strong>Location: </strong>{{ header.location}}
-  </li>
-  <li>
-    <strong>socialNetwork: </strong>{{ header.socialNetwork }}
-  </li>
-</ul>
+<div class="header-card">
+  <img src="assets/images/IMG-20240924-WA0177.jpg" alt="Profile Photo" class="profile-image" />
+
+  <h1>{{ header.name }}</h1>
+  <p class="goal">{{ header.goalLife }}</p>
+
+  <ul class="contact-list">
+    <li><strong>Email:</strong> {{ header.email }}</li>
+    <li><strong>Phone:</strong> {{ header.phoneNumber }}</li>
+    <li><strong>Location:</strong> {{ header.location }}</li>
+    <li><strong>Network:</strong> {{ header.socialNetwork }}</li>
+  </ul>
+
+  <div class="header-actions">
+    <a href="URL DE TU CV PDF" target="_blank" class="btn">📄 Download CV</a>
+    <a href="https://github.com/Jeshuabenitez" target="_blank" class="icon-link">🌐 GitHub</a>
+    <a href="https://www.instagram.com/jeshua_benitez/" target="_blank" class="icon-link">📎 Instagram</a>
+  </div>
+</div>
+
+
 
 

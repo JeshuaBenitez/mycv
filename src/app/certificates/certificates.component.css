@@ -1,0 +1,31 @@
+.certificates-card {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.certificates-card h2 {
+  color: #f0f6fc;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.work-entry {
+  background-color: #2d333b;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-left: 4px solid #58a6ff;
+  margin-bottom: 16px;
+}
+
+.work-entry p {
+  margin: 4px 0;
+  color: #d1d5da;
+  font-size: 0.95rem;
+}
+
+.work-entry strong {
+  color: #58a6ff;
+  font-weight: bold;
+}

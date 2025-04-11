@@ -1,11 +1,10 @@
-<ul *ngFor="let edu of education">
-  <li> 
-    <strong>School:</strong> {{edu.School}} <br>
-  </li>
-  <li>
-    <strong>Training:</strong> {{ edu.Training }}
-  </li>
-<li>
-  <strong>Licenses:</strong> {{ edu.licenses }} <br>
-</li>
-</ul>
+<div class="education-container">
+  <h2>Schooling</h2>
+
+  <div *ngFor="let edu of education" class="work-entry">
+    <p><strong>Training:</strong> {{ edu.Training }}</p>
+    <p><strong>School:</strong> {{ edu.School }}</p>
+    <p><strong>Licenses:</strong> {{ edu.licenses }}</p>
+  </div>
+</div>
+

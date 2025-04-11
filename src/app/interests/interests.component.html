@@ -1,5 +1,9 @@
-<ul *ngFor = "let inte of interests">
-    <li>
-        <strong>Interests: </strong> {{ inte.interes }} <br>
-    </li>
-</ul>
+<div class="interests-card">
+  <h2>Interests</h2>
+  <div class="interests-list">
+    <span class="interest-chip" *ngFor="let interest of interests">
+      {{ interest.interes }}
+    </span>
+  </div>
+</div>
+

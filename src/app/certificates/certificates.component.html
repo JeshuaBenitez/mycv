@@ -1,8 +1,10 @@
-<ul *ngFor="let cert of certificates"> 
-    <li>
-        <strong>Institution: </strong> {{ cert.Institution }} <br>
-    </li>
-    <li>
-        <strong>Certification:</strong> {{cert.certificacion}}
-    </li>
-</ul>
+<div class="certificates-card">
+  <h2>Certificates</h2>
+
+  <div *ngFor="let cert of certificates" class="work-entry">
+    <p><strong>Certificate:</strong> {{ cert.certificacion}}</p>
+    <p><strong>Institution:</strong> {{ cert.Institution }}</p>
+  </div>
+</div>
+
+  

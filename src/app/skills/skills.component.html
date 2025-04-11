@@ -1,8 +1,9 @@
-<ul *ngFor="let skill of skills"> 
-  <li> 
-    <strong>Lenguajes: </strong> {{ skill.lenguajes }} <br>
-  </li> 
-  <li>
-    <strong>Tecnologías: </strong> {{ skill.tecnologias }}
-  </li>
-</ul>
+<div class="skills-card">
+  <h2>Skills</h2>
+
+  <div *ngFor="let skill of skills" class="work-entry">
+    <p><strong>Programming languages:</strong> {{ skill.lenguajes }}</p>
+    <p><strong>Technologies:</strong> {{ skill.tecnologias }}</p>
+  </div>
+</div>
+

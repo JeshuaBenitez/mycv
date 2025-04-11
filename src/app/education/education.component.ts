@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { EducationService } from '../services/education-service/education.service'; 
 import { Education } from '../models/education/education.model'; 
 import { map } from 'rxjs/operators';
