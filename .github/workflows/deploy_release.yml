@@ -10,6 +10,9 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -25,16 +28,16 @@ jobs:
       - name: Build Angular app (mycv)
         run: npm run build --configuration production
 
-      - name: Copy built files to docs
+      - name: Copy built files to docs/
         run: |
           rm -rf docs
           mkdir docs
           cp -r dist/mycv/browser/* docs/
 
-      - name: Commit and push to docs
+      - name: Commit and push docs
         run: |
           git config --global user.name "CI Bot"
           git config --global user.email "ci@example.com"
           git add docs
-          git commit -m "Auto-deploy to docs from deploy-release"
+          git commit -m "Auto-deploy to docs from deploy-release" || echo "No changes to commit"
           git push
