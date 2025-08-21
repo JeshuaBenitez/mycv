@@ -1,10 +1,10 @@
 export class Header {
    id?: string;
-   name?: string = 'name';
+   name?: string = 'Jeshua Benitez';
    goalLife?: string = 'goal';
    photoUrl?: string = 'photo';
-   email?: string = 'email@domain.com';
-   phoneNumber?: string = '999-999-9999';
-   location?: string = 'city, country';
-   socialNetwork?: string = '@facebook';
+   email?: string = 'jesuaeder.moshi2004@gmail.com';
+   phoneNumber?: string = '272-165-6576';
+   location?: string = 'Orizaba, VEracruz';
+   socialNetwork?: string = '@Jeshua Benitez';
 }
