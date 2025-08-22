@@ -57,6 +57,7 @@
                 }
               ],
               "outputHashing": "all",
+              "baseHref": "/mycv/",
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
