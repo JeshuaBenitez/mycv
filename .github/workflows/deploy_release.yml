@@ -26,13 +26,12 @@ jobs:
         run: npm ci
 
       - name: Build Angular app (mycv)
-        run: npm run build --configuration production
+        run: npm run build -- --configuration production --base-href "/mycv/"
 
-      - name: Copy built files to docs/
+      - name: Move build output to docs/
         run: |
           rm -rf docs
-          mkdir docs
-          cp -r dist/mycv/browser/* docs/
+          mv dist/mycv/browser docs
 
       - name: Commit and push docs
         run: |
