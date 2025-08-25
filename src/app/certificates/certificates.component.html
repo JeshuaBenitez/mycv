@@ -1,10 +1,16 @@
 <div class="certificates-card">
-  <h2>Certificates</h2>
+  <h2>Certificados</h2>
 
-  <div *ngFor="let cert of certificates" class="work-entry">
-    <p><strong>Certificate:</strong> {{ cert.certificacion}}</p>
-    <p><strong>Institution:</strong> {{ cert.Institution }}</p>
+  <div class="work-entry">
+    <p><strong>Certificado:</strong> Python</p>
+    <p><strong>Institución:</strong> Kaggle</p>
+
+    <!-- Aquí el botón que redirige -->
+    <a href="https://www.kaggle.com/learn/certification/jeshuabenitez/python" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="btn-link">
+       Ver certificado
+    </a>
   </div>
 </div>
-
-  

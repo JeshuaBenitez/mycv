@@ -26,4 +26,17 @@ export class CertificatesComponent {
       console.log(this.certificates);
     })
   }
+
+  normalizeUrl(url?: string): string | null {
+  if (!url) return null;
+  const trimmed = url.trim();
+  const candidate = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+  try {
+    new URL(candidate);      // valida formato
+    return candidate;
+  } catch {
+    return null;             // oculta el link si no es válida
+  }
+}
+
 }
